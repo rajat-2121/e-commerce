@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import Carousel from "react-material-ui-carousel";
-import bg from "../../Assets/background.jpg";
-import bg2 from "../../Assets/background2.jpg";
+import bg from "../../Assets/obg1.jpg";
+import bg2 from "../../Assets/obg2.jpg";
 import ProductCard from "../Products/ProductCard";
 import  {useDispatch, useSelector} from "react-redux"
 import { clearErrors, getProduct } from "../../actions/ProductActions";
@@ -74,7 +74,7 @@ const Home = () => {
                    fontSize:"4.5em",
                    fontFamily:"Poppins,sans-serif",
                    color:"#fff",
-                 }}>Fashionable</h2>
+                 }}>Aesthetic</h2>
                </div>
                <div>
                  <h2 style={{
@@ -95,14 +95,14 @@ const Home = () => {
                    paddingTop:"10px"
                  }}
                  >
-                 Get Free Shipping on all orders over $99.00
+                 Get Free Shipping on all orders over Rs. 999
                  </h2>
                </div>
                <div>
                  <a href="#container">
                  <button type="submit" style={{
                    width:"135px",
-                   height:"50px",
+                   height:"70px",
                    border:"none",
                    background:"#3BB77E",
                    margin:"10px 0",

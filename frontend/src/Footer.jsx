@@ -7,7 +7,7 @@ const Footer = () => {
       {/* Footer 1st part */}
       <div className="footer1st">
         <img
-          src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg"
+          src="https://png.pngtree.com/png-vector/20220207/ourmid/pngtree-e-letter-logo-ecommerce-shop-store-design-png-image_4381099.png"
           style={{ cursor: "pointer" }}
         />
         <div className="location flex py__10">
@@ -23,7 +23,7 @@ const Footer = () => {
             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
           </svg>
           <strong>Address:</strong>
-          <h6>7400 Jashore Sadar,Bangladesh</h6>
+          <h6>IIT (BHU), Varanasi - 221005, India</h6>
         </div>
 
         <div className="location flex py__10">
@@ -38,7 +38,7 @@ const Footer = () => {
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
           </svg>
           <strong>Email:</strong>
-          <h6>temp1234@gmail.com</h6>
+          <h6>rajatprajapati2121@gmail.com</h6>
         </div>
 
         <div className="location flex py__10">
@@ -53,7 +53,7 @@ const Footer = () => {
             <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
           </svg>
           <strong>Call us:</strong>
-          <h6>+8801785830142</h6>
+          <h6>+91 74270 50255</h6>
         </div>
 
         <div className="location flex py__10">

@@ -42,7 +42,7 @@ const UpdateUser = ({ history, match }) => {
       setRole(user.role);
     }
     if (error) {
-      toast.error(error);
+      // toast.error(error);
       dispatch(clearErrors());
     }
 

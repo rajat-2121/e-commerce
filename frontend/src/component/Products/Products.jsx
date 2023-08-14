@@ -13,13 +13,13 @@ import MetaData from "../../more/Metadata";
 import BottomTab from "../../more/BottomTab";
 
 const categories = [
-    "Personal",
-    "cloth",
-    "Ladies Cloth",
+    "Furniture",
+    "Toys",
+    "Home Decor",
     "Gift",
-    "Food",
-    "Electronics",
-    "Sports",
+    "Idols",
+    // "Electronics",
+    // "Sports",
     "Others"
 ]
 

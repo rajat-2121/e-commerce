@@ -116,8 +116,8 @@ function App() {
          <ProtectedRoute isAdmin={true} exact path="/admin/reviews" component={AllReviews} />
 
          <Route component={
-           window.location.pathname === "/process/payment" ? null : Notfound
-           } />
+            window.location.pathname === "/process/payment" ? null : Notfound
+            } />
        </Switch>
      </Router>
 

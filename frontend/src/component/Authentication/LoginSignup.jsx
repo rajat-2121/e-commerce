@@ -80,6 +80,7 @@ const LoginSignup = ({ history, location }) => {
 
     if (isAuthenticated) {
       history.push(redirect);
+      // toast.success("Registration Successfull");
     }
   }, [dispatch, error, alert, history, isAuthenticated]);
 
@@ -171,6 +172,7 @@ const LoginSignup = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+
                 <div className="signUpPassword">
                   <LockOpenIcon />
                   <input

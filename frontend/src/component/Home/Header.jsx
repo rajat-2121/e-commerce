@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import logo from "../../Assets/LOGO.jpg"
 import { useSelector } from "react-redux";
 
 const Header = () => {
@@ -27,7 +28,7 @@ window.addEventListener("scroll", () =>{
       <div className="logo pxy__10">
         <Link to="/">
           <img
-            src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg"
+            src={logo}
             alt=""
             className="logo"
             style={{
@@ -99,7 +100,7 @@ window.addEventListener("scroll", () =>{
         >
           <strong style={{
             padding:"0px 5px"
-          }}>Email:</strong> temp123@gmail.com
+          }}>Email:</strong> president.pragatipath@gmail.com
         </span>
       </div>
     </div>

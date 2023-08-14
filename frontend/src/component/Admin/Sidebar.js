@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
+import logo from "../../Assets/LOGO.jpg";
 import PostAddIcon from "@material-ui/icons/PostAdd";
 import AddIcon from "@material-ui/icons/Add";
 import LocalOffer from "@material-ui/icons/LocalOffer";
@@ -19,7 +20,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link to="/">
-        <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg" alt="Ecommerce" 
+        <img src={logo} alt="The wood shapers" height="150px" width="1px"
         />
       </Link>
       <Link to="/dashboard">

@@ -61,7 +61,6 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
       new ErrorHandler("User is not find with this email & password", 401)
     );
   }
-
   sendToken(user, 201, res);
 });
 
@@ -202,7 +201,7 @@ exports.updateProfile = catchAsyncErrors(async(req,res,next) =>{
         email: req.body.email,
     };
 
-   if (req.body.avatar !== "") {
+    if (req.body.avatar !== "") {
     const user = await User.findById(req.user.id);
 
     const imageId = user.avatar.public_id;
