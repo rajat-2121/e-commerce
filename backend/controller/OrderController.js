@@ -11,17 +11,26 @@ exports.createOrder = catchAsyncErrors(async (req,res,next) =>{
         orderItems,
         paymentInfo,
         itemsPrice,
-        taxPrice,
+        // taxPrice,
         shippingPrice,
         totalPrice,
     } = req.body;
 
+    const modifiedOrderItems = {
+      productName: orderItems.name,
+      productPrice: orderItems.price,
+      quantity: orderItems.quantity,
+      productImage: orderItems.image,
+      productId: orderItems.product
+    }
+
+
     const order = await Order.create({
         shippingInfo,
-        orderItems,
+        modifiedOrderItems,
         paymentInfo,
         itemsPrice,
-        taxPrice,
+        // taxPrice,
         shippingPrice,
         totalPrice,
         paidAt:Date.now(),

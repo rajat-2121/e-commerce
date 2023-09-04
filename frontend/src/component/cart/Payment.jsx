@@ -91,10 +91,11 @@ const Payment = ({ history }) => {
             id: result.paymentIntent.id,
             status: result.paymentIntent.status,
           };
-
+          
           dispatch(createOrder(order));
-
+          
           history.push("/success");
+  
         } else {
           toast.error("There's some issue while processing payment ");
         }
