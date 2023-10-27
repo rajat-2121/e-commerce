@@ -16,7 +16,7 @@ dotenv.config({
 else
 {
     dotenv.config({
-        path:"/etc/secrets/.env"
+        path:"/etc/secrets/env.txt"
 })}
 // connect database
 connectDatabase();
