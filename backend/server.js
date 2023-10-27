@@ -13,11 +13,11 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 dotenv.config({
     path:"backend/config/.env"
 })}
-else
-{
-    dotenv.config({
-        path:"/etc/secrets/env.txt"
-})}
+// else
+// {
+//     dotenv.config({
+//         path:"/etc/secrets/env.txt"
+// })}
 // connect database
 connectDatabase();
 
