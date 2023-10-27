@@ -9,15 +9,15 @@ process.on("uncaughtException",(err) =>{
 })
 
 // config
-if(process.env.NODE_ENV!=="PRODUCTION"){
+if(process.env.NODE_ENV!="PRODUCTION"){
 dotenv.config(
     // {path:"backend/.env"}
 )}
-// else
-// {
-//     dotenv.config({
-//         path:"/etc/secrets/env.txt"
-// })}
+else
+{
+    dotenv.config({
+        path:"/etc/secrets/env.txt"
+})}
 // connect database
 connectDatabase();
 
