@@ -41,3 +41,19 @@
       font-size: 2.8vmax;
     }
   }
+
+
+  .middleContainer{
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+
+  .middleContainer::-webkit-scrollbar{
+    width: 5px;
+    background-color: #ebe6e6;
+  }
+
+  .middleContainer::-webkit-scrollbar-thumb{
+    background-color: #a7a2a2;
+  }

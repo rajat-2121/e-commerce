@@ -65,9 +65,10 @@ const UpdateOrder = ({ history, match }) => {
               className="confirmOrderPage"
               style={{
                 display: order.orderStatus === "Delivered" ? "block" : "grid",
+                
               }}
             >
-              <div>
+              <div className="middleContainer">
                 <div className="confirmshippingArea">
                   <Typography>Shipping Info</Typography>
                   <div className="orderDetailsContainerBox">
