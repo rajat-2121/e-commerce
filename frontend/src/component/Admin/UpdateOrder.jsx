@@ -102,7 +102,7 @@ const UpdateOrder = ({ history, match }) => {
 
                     <div>
                       <p>Amount:</p>
-                      <span>${order.totalPrice && order.totalPrice}</span>
+                      <span>₹ {order.totalPrice && order.totalPrice}</span>
                     </div>
                   </div>
 
@@ -124,6 +124,7 @@ const UpdateOrder = ({ history, match }) => {
                 <div className="confirmCartItems">
                   <Typography>Your Cart Items:</Typography>
                   <div className="confirmCartItemsContainer">
+                    {/* {console.log(order)} */}
                     {order.orderItems &&
                       order.orderItems.map((item) => (
                         <div key={item.product}>
@@ -132,8 +133,8 @@ const UpdateOrder = ({ history, match }) => {
                             {item.name}
                           </Link>{" "}
                           <span>
-                            {item.quantity} X ${item.price} ={" "}
-                            <b>${item.price * item.quantity}</b>
+                            {item.quantity} X ₹{item.price} ={" "}
+                            <b>₹ {item.price * item.quantity}</b>
                           </span>
                         </div>
                       ))}

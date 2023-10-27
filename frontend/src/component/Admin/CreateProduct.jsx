@@ -7,6 +7,7 @@ import MetaData from "../../more/Metadata";
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import DescriptionIcon from "@material-ui/icons/Description";
 import StorageIcon from "@material-ui/icons/Storage";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import SpellcheckIcon from "@material-ui/icons/Spellcheck";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import DiscountIcon from "@material-ui/icons/LocalOffer";
@@ -29,13 +30,13 @@ const CreateProduct = ({ history }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Personal",
-    "cloth",
-    "Ladies Cloth",
+    "Furniture",
+    "Toys",
+    "Home Decor",
     "Gift",
-    "Food",
-    "Electronics",
-    "Sports",
+    "Idols",
+    // "Electronics",
+    // "Sports",
     "Others"
   ];
 
@@ -123,7 +124,8 @@ const CreateProduct = ({ history }) => {
             </div>
 
             <div>
-              <AttachMoneyIcon />
+              {/* <AttachMoneyIcon /> */}
+              <CurrencyRupeeIcon />
               <input
                 type="number"
                 placeholder="Product Price"

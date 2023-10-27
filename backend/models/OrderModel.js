@@ -28,12 +28,35 @@ const orderSchema = new mongoose.Schema({
     },
   },
   orderItems: [
+    // {
+    //   productName: {
+    //     type: String,
+    //     required: true,
+    //   },
+    //   productPrice: {
+    //     type: Number,
+    //     required: true,
+    //   },
+    //   quantity: {
+    //     type: Number,
+    //     required: true,
+    //   },
+    //   productImage: {
+    //     type: String,
+    //     required: true,
+    //   },
+    //   productId: {
+    //     type: mongoose.Schema.ObjectId,
+    //     ref: "Product",
+    //     required: true,
+    //   },
+    // },
     {
-      productName: {
+      name: {
         type: String,
         required: true,
       },
-      productPrice: {
+      price: {
         type: Number,
         required: true,
       },
@@ -41,11 +64,11 @@ const orderSchema = new mongoose.Schema({
         type: Number,
         required: true,
       },
-      productImage: {
+      image: {
         type: String,
         required: true,
       },
-      productId: {
+      product: {
         type: mongoose.Schema.ObjectId,
         ref: "Product",
         required: true,

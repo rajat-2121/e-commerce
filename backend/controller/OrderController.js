@@ -16,18 +16,22 @@ exports.createOrder = catchAsyncErrors(async (req,res,next) =>{
         totalPrice,
     } = req.body;
 
-    const modifiedOrderItems = {
-      productName: orderItems.name,
-      productPrice: orderItems.price,
-      quantity: orderItems.quantity,
-      productImage: orderItems.image,
-      productId: orderItems.product
-    }
+    // console.log(req.body);
 
+    // const modifiedOrderItems = {
+    //   productName: orderItems.name,
+    //   productPrice: orderItems.price,
+    //   quantity: orderItems.quantity,
+    //   productImage: orderItems.image,
+    //   productId: orderItems.product
+    // }
+
+    // orderItems = [modifiedOrderItems]
 
     const order = await Order.create({
         shippingInfo,
-        modifiedOrderItems,
+        // modifiedOrderItems,
+        orderItems,
         paymentInfo,
         itemsPrice,
         // taxPrice,
@@ -36,6 +40,8 @@ exports.createOrder = catchAsyncErrors(async (req,res,next) =>{
         paidAt:Date.now(),
         user: req.user._id,
     });
+
+    // console.log(order);
 
     res.status(201).json({
         success: true,

@@ -101,7 +101,7 @@ const Shipping = ({ history }) => {
                   value={state}
                   onChange={(e) => setState(e.target.value)}
                 >
-                  <option value="">City</option>
+                  <option value="">State</option>
                   {State &&
                     State.getStatesOfCountry(country).map((item) => (
                       <option key={item.isoCode} value={item.isoCode}>
