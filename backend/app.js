@@ -1,5 +1,9 @@
 const express = require("express");
 const app = express();
+const dotenv = require("dotenv")
+dotenv.config({
+    // path:"backend/config/.env"
+})
 const ErrorHandler = require("./middleware/error");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
@@ -14,9 +18,7 @@ app.use(fileUpload({useTempFiles: true}));
 
 // config
 // if(process.env.NODE_ENV!=="PRODUCTION"){
-    require("dotenv").config({
-        path:"backend/config/.env"
-    })
+
 // }
 
 // Route imports
