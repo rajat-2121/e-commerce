@@ -2,16 +2,15 @@ const app = require("./app");
 const connectDatabase = require("./db/Database.js");
 const cloudinary = require("cloudinary");
 const dotenv = require("dotenv");
+// config
+dotenv.config(
+    {path:"backend/config/.env"}
+)
 // Handling uncaught Exception
 process.on("uncaughtException",(err) =>{
     console.log(`Error: ${err.message}`);
     console.log(`Shutting down the server for Handling uncaught Exception`);
 })
-
-// config
-dotenv.config(
-    {path:"./config/.env"}
-)
 
 // connect database
 connectDatabase();

@@ -13,10 +13,11 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(fileUpload({useTempFiles: true}));
 
 // config
-if(process.env.NODE_ENV!=="PRODUCTION"){
+// if(process.env.NODE_ENV!=="PRODUCTION"){
     require("dotenv").config({
         path:"backend/config/.env"
-    })}
+    })
+// }
 
 // Route imports
 const product = require("./routes/ProductRoute");
