@@ -62,7 +62,7 @@ export const getProductDetails= (id) => async (dispatch)=>{
   try {
       dispatch({ type: PRODUCT_DETAILS_REQUEST });
   
-      const { data } = await axios.get(`https://wood-shapers.onrender.com/api/v2/product/${id}`);
+      const { data } = await axios.get(`/api/v2/product/${id}`);
   
       dispatch({
         type: PRODUCT_DETAILS_SUCCESS,
